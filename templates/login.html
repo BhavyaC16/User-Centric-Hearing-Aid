@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Reality Tales</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'><link rel="stylesheet" href="{{ url_for( 'static' , filename='login/style.css') }}">
+<link rel="shortcut icon" type="image/x-icon" href="{{ url_for( 'static' , filename='RealityTalesLogos/favicon.ico') }}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="collapse d-flex flex-column flex-md-row align-items-center p-3 px-md-4 purple shadow-sm">
+    <h5 style="font-size: 2rem" class="purple mx-auto pt-2 pb-2 text-light text-center mb-0 align-middle">
+        <i class="fas fa-cubes fa-lg"></i> Company.io
+    </h5>
+</div>
+<div class="row h-100">
+    <div class="col purple left">
+        <div class="row" style="height: 100%">
+            <div class="col my-auto">
+                <h5 style="font-size: 3rem" class=" mt-0 mb-0 text-light text-center mb-0 align-middle">
+                        <i class="fas fa-cubes fa-lg"></i> Company.io
+                    </h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md right">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="card shadow border-0 mx-auto">
+                    <div class="card-header p-4">
+                        <h5 class="text-light text-center mb-0 align-middle">
+                            <i class="fas fa-cubes fa-lg"></i>
+                        </h5>
+                    </div>
+                    <div class="loader h-100">
+                        <div class="dots" style="display: none; opacity: 0">
+                            <div style="position: absolute; bottom: 35%; left: 30%;" class="row justify-content-center">
+                                <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-dot" fill="#e8b513" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                </svg>
+                                <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-dot" fill="#4181eb" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                </svg>
+                                <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-dot" fill="#2ba34c" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                </svg>
+                            </div>                 
+                        </div>
+                        <div class="row">
+                            <div class="card-body p-4">
+
+                                <h5 class="text-grey text-center mt-0 font-weight-bold">Sign In</h5>
+                                <p class="text-center text-muted">Enter your username and password.</p>
+                                                <div class="row mb-3 text-center">
+                                <img src="https://i.ibb.co/sy9j0YF/download-11.png" class="mx-auto text-center" height="80"/>
+                            </div>
+                                <form onsubmit="validateForm(event)" id="signIn" novalidate>
+                                    <div class="form-group p-1">
+                                        <label for="username text-muted">
+                                            <h6 class="text-grey"><i class="fas fa-user"></i> Username</h6>
+                                        </label>
+                                        <input name="username" placeholder="Enter your username" required="true" id="username" type="text" class="form-control">
+                                        <div class="invalid-feedback">Please enter your username</div>
+                                        <label for="password" class="mt-4">
+                                            <h6 class="text-grey"><i class="fas fa-key"></i> Password</h6>
+                                        </label>
+                                        <input name="password" placeholder="Enter your password" required="true" id="password" type="password" class="form-control">
+                                        <div class="invalid-feedback">Please enter your password</div>
+                                    </div>
+                                    <div class="row">
+                                        <button value="submit" id="submit" class="btn btn-primary mx-auto">
+                                            <span class="btn-text">Submit</span>
+                                        </button>
+                                    </row>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" type="text/javascript">
+<!-- partial -->
+  <script  src="{{ url_for( 'static' , filename='login/script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for( 'static' , filename='assets/favicon.ico') }}">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for( 'static' , filename='style.css') }}"> 
+  <title>Hearing Aid</title>
+  <style type="text/css" media="screen">
+    /*[style*="OpenSans"] { font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important }*/
+          /* Linked Styles */
+          /*body { padding:0 !important; margin:0 !important; display:block !important; background:#ffffff; -webkit-text-size-adjust:none }
+          a { color:#324360; text-decoration:none }
+          p { padding:0 !important; margin:0 !important } */
+      
+          /* Mobile styles */
+          @media only screen and (max-device-width: 480px), only screen and (max-width: 480px) { 
+            div[class='mobile-br-5'] { height: 5px !important; }
+            div[class='mobile-br-10'] { height: 10px !important; }
+            div[class='mobile-br-15'] { height: 15px !important; }
+            div[class='mobile-br-20'] { height: 20px !important; }
+            div[class='mobile-br-25'] { height: 25px !important; }
+            div[class='mobile-br-30'] { height: 30px !important; }
+      
+            th[class='m-td'], 
+            td[class='m-td'], 
+            div[class='hide-for-mobile'], 
+            span[class='hide-for-mobile'] { display: none !important; width: 0 !important; height: 0 !important; font-size: 0 !important; line-height: 0 !important; min-height: 0 !important; }
+      
+            span[class='mobile-block'] { display: block !important; }
+            div[class='h1'] { font-size: 23px !important; line-height: 30px !important; }
+            div[class='h2'] { font-size: 17px !important; line-height: 25px !important; }
+            div[class='h1-blue'] { font-size: 23px !important; line-height: 30px !important; }
+            div[class='h4'],
+            div[class='h4-r'],
+            div[class='h6-r'],
+            div[class='h6'],
+            div[class='img-m-center'] { text-align: center !important; }
+            div[class='fluid-img'] img,
+            td[class='fluid-img'] img { width: 100% !important; max-width: 480px !important; height: auto !important; }
+            table[class='mobile-shell'] { width: 100% !important; min-width: 100% !important; }
+            td[class='td'] { width: 100% ! important; min-width: 100% !important; }
+            table[class='center'] { margin: 0 auto; }
+            th[class='column'] { float: left !important; width: 100% !important; display: block !important; }
+            td[class='content-spacing'] { width: 12px !important; }
+          }
+  </style>
+</head>
+
+<body class="body" style="display: block !important; -webkit-text-size-adjust: none; margin: 0; padding: 0;" >
+  <!-- Below you will find a liquid tag containing the "content" variable. The content
+    of your emails will be inserted wherever you put this tag. -->
+    <div class="menu">
+    <a href="/"><img class="logo" src="/static/assets/logo.png" width="auto" height="60em"></a>
+      <h2><a href="/">Hearing Aid</a></h2>
+      
+      <!-- <a href="/login">Login</a> -->
+      <!-- <a href="/">Home</a> -->
+      <a href="/home">Home</a>
+      <!-- <a href="/bookmarks">Bookmarks</a> -->
+      <a href="/help">Help</a>
+      <!-- <a href="/terms">Terms</a> -->
+    </div>
+  <table width="100%" border="0" margin="100px" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+    <tr>
+      <td align="center" valign="top">
+        <table width="540" border="0" cellspacing="0" cellpadding="0" class="mobile-shell">
+          <tr>
+            <td class="td" style="font-size: 0pt; line-height: 0pt; font-weight: normal; width: 540px; min-width: 540px; margin: 0; padding: 0;" width="540">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td class="content-spacing" style="font-size: 0pt; line-height: 0pt; text-align: left;" width="20" align="left"></td>
+                  <td>
+                    <!-- Header -->
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="40" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="hide-for-mobile">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                        <tr>
+                          <td height="22" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                        </tr>
+                      </table>
+                    </div>
+<!--                     <div class="img-center" style="font-size: 0pt; line-height: 0pt; text-align: center;" align="center">
+                      <a href="http://whatis.customeriomail.com" target="_blank" style="color: #324360; text-decoration: none;">
+                        <img src="https://s3-us-west-1.amazonaws.com/privacy-email/logo.jpg" width="119" height="20" border="0" alt="">
+                      </a>
+                    </div> -->
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="40" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="hide-for-mobile">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                        <tr>
+                          <td height="18" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!-- END Header -->
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td class="content-spacing" style="font-size: 0pt; line-height: 0pt; text-align: left;" width="33" align="left"></td>
+                        <td>
+                          <div class="h1-blue" style="color: #324360; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; font-size: 28px; line-height: 40px; text-align: center;" align="center">Take reliable, cost-free hearing tests from any device. Generate reports to automatically adjust your hearing aid by yourself!</div>
+                        </td>
+                        <td class="content-spacing" style="font-size: 0pt; line-height: 0pt; text-align: left;" width="36" align="left"></td>
+                      </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="40" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="hide-for-mobile">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                        <tr>
+                          <td height="22" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                  <td class="content-spacing" style="font-size: 0pt; line-height: 0pt; text-align: left;" width="20" align="left"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f2f6fa">
+    <tr>
+      <td align="center" valign="top">
+        <table width="540" border="0" cellspacing="0" cellpadding="0" class="mobile-shell">
+          <tr>
+            <td class="td" style="font-size: 0pt; line-height: 0pt; font-weight: normal; width: 540px; min-width: 540px; margin: 0; padding: 0;" width="540">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td class="content-spacing" style="font-size: 0pt; line-height: 0pt; text-align: left;" width="68" align="left"></td>
+                  <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="40" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="hide-for-mobile">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                        <tr>
+                          <td height="20" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <a href="/player">
+                      <div class="img-center" style="font-size: 0pt; line-height: 0pt; text-align: center;" align="center">
+                        <img src="/static/assets/headphones.png" width="240" height="auto" border="0" alt="">
+                      </div>
+                  </a>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="20" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="hide-for-mobile">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                        <tr>
+                          <td height="10" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <a href="/player">
+                    <div class="h1-blue" style="color: #324360; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; font-size: 28px; line-height: 40px; text-align: center;" align="center">Take an instant hearing test</div>
+                  </a>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="28" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="h2" style="color: #324360; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; font-size: 20px; line-height: 28px; text-align: center;" align="center">The website will walk you through a three step process to help generate accurate test results. You can then transfer the report to your hearing aid by simply switching it ON!</div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="37" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="hide-for-mobile">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                        <tr>
+                          <td height="12" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                  <td class="content-spacing" style="font-size: 0pt; line-height: 0pt; text-align: left;" width="68" align="left"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+    <tr>
+      <td align="center" valign="top">
+        <table width="540" border="0" cellspacing="0" cellpadding="0" class="mobile-shell">
+          <tr>
+            <td class="td" style="font-size: 0pt; line-height: 0pt; font-weight: normal; width: 540px; min-width: 540px; margin: 0; padding: 0;" width="540">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td class="content-spacing" style="font-size: 0pt; line-height: 0pt; text-align: left;" width="68" align="left"></td>
+                  <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="40" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="hide-for-mobile">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                        <tr>
+                          <td height="12" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <a href="/learnmore">
+                     <div class="img-center" style="font-size: 0pt; line-height: 0pt; text-align: center;" align="center">
+                        <img src="/static/assets/learnmore.png" width="400" height="auto" border="0" alt="">
+                      </div>
+                    </a>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="30" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="hide-for-mobile">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                        <tr>
+                          <td height="11" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <a href="/learnmore">
+                    <div class="h1-blue" style="color: #324360; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; font-size: 28px; line-height: 40px; text-align: center;" align="center">Learn More</div>
+                  </a>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="28" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="h2" style="color: #324360; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; font-size: 20px; line-height: 28px; text-align: center;" align="center">You can get to know more about audiograms and the working of your hearing aid here!</div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="37" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="hide-for-mobile">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                        <tr>
+                          <td height="12" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                  <td class="content-spacing" style="font-size: 0pt; line-height: 0pt; text-align: left;" width="68" align="left"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f2f6fa">
+    <tr>
+      <td align="center" valign="top">
+        <table width="540" border="0" cellspacing="0" cellpadding="0" class="mobile-shell">
+          <tr>
+            <td class="td" style="font-size: 0pt; line-height: 0pt; font-weight: normal; width: 540px; min-width: 540px; margin: 0; padding: 0;" width="540">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td class="content-spacing" style="font-size: 0pt; line-height: 0pt; text-align: left;" width="40" align="left"></td>
+                  <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="40" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="hide-for-mobile">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                        <tr>
+                          <td height="20" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <a href="/contact">
+                      <div class="fluid-img" style="font-size: 0pt; line-height: 0pt; text-align: left;" align="left">
+                        <div class="img-center" style="font-size: 0pt; line-height: 0pt; text-align: center;" align="center">
+                          <img src="/static/assets/contact.png" width="250" height="auto" border="0" alt="">
+                        </div>
+                      </div>
+                    </a>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="20" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="hide-for-mobile">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                        <tr>
+                          <td height="10" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <a href="/contact">
+                    <div class="h1-blue" style="color: #324360; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; font-size: 28px; line-height: 40px; text-align: center;" align="center">Contact Us!</div>
+                  </a>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="28" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="h2" style="color: #324360; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; font-size: 20px; line-height: 28px; text-align: center;" align="center">Let us know your experience and valuable suggestions!</div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                      <tr>
+                        <td height="37" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                      </tr>
+                    </table>
+                    <div class="hide-for-mobile">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;">
+                        <tr>
+                          <td height="12" class="spacer" style="font-size: 0pt; line-height: 0pt; text-align: center; width: 100%; min-width: 100%;" align="center"> </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                  <td class="content-spacing" style="font-size: 0pt; line-height: 0pt; text-align: left;" width="40" align="left"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  
+</body>
+
+</html>

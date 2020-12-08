@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Hearing Aid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'><link rel="stylesheet" href="{{ url_for( 'static' , filename='home/style.css') }}">
+<link rel="shortcut icon" type="image/x-icon" href="{{ url_for( 'static' , filename='assets/favicon.ico') }}">
+
+
+</head>
+<body>
+	  <div class="menu">
+	  	<a href="/"><img class="logo" src="/static/assets/logo.png" width="auto" height="60em"></a>
+      <h2><a href="/">Hearing Aid</a></h2>
+      
+      <!-- <a href="/login">Login</a> -->
+      <!-- <a href="/">Home</a> -->
+      <a href="/home">Home</a>
+      <!-- <a href="/bookmarks">Bookmarks</a> -->
+      <a href="/help">Help</a>
+      <!-- <a href="/terms">Terms</a> -->
+    </div>
+<!-- partial:index.partial.html -->
+<div class="cards-list">
+  
+<div class="card 1" id="card1">
+  <div class="card_image"> <img src="/static/home/1.jpg" /> </div>
+  <div class="card_title title-black">
+    <p>Instant Hearing <br>Test</p>
+  </div>
+</div>
+
+<!--   <div class="card 2" id="card2">
+  <div class="card_image">
+    <img src="/static/home/2.jpg" />
+    </div>
+  <div class="card_title title-black">
+    <p>Transfer Report to Device</p>
+  </div>
+</div> -->
+
+<div class="card 3" id="card3">
+  <div class="card_image">
+    <img src="/static/home/3.jpg" />
+  </div>
+  <div class="card_title title-black">
+    <p>Lean More about your Hearing aid</p>
+  </div>
+</div>
+  
+  <div class="card 4" id="card4">
+  <div class="card_image">
+    <img src="/static/home/4.jpg" />
+    </div>
+  <div class="card_title title-black">
+    <p>Contact Us</p>
+  </div>
+  </div>
+
+</div>
+<!-- partial -->
+  
+</body>
+
+<script type="text/javascript">
+	document.getElementById("card1").addEventListener("click", function() {
+  window.location.replace("/player");
+});
+
+	document.getElementById("card3").addEventListener("click", function() {
+  window.location.replace("/learnmore");
+});
+
+	document.getElementById("card4").addEventListener("click", function() {
+  window.location.replace("/contact");
+});
+
+
+</script>
+</html>

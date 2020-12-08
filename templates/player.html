@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>Hearing Aid</title> 
+<!-- Load FontAwesome icons -->
+<link rel="stylesheet"
+    href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> 
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+
+<!-- Load the custom CSS style file -->
+<link rel="stylesheet" type="text/css" href="{{ url_for( 'static' , filename='player/style.css') }}"> 
+<link rel="shortcut icon" type="image/x-icon" href="{{ url_for( 'static' , filename='assets/favicon.ico') }}">
+</head> 
+<body> 
+<div class="menu">
+    <a href="/"><img class="logo" src="/static/assets/logo.png" width="auto" height="60em"></a>
+      <h2><a href="/">Hearing Aid</a></h2>
+      
+      <!-- <a href="/login">Login</a> -->
+      <!-- <a href="/">Home</a> -->
+      <a href="/home">Home</a>
+      <!-- <a href="/bookmarks">Bookmarks</a> -->
+      <a href="/help">Help</a>
+      <!-- <a href="/terms">Terms</a> -->
+    </div>
+<button type="button" class="start button" id="startbttn" onclick="start()">START</button>
+
+<div id="help-1" class="help-1">
+<image src="{{ url_for( 'static' , filename='assets/5.png') }}" height="500px" width="auto" alt="Help"></image></div>
+<div id="help-2" class="help-2">
+<image src="{{ url_for( 'static' , filename='assets/6.png') }}" height="500px" width="auto" alt="Help"></image></div>
+<div id="help-3" class="help-3">
+<image src="{{ url_for( 'static' , filename='assets/7.png') }}" height="500px" width="auto" alt="Help"></image></div>
+
+<div id="info-text" class="info-text">Calibrate your device!</div>
+<div id="headphone" class="headphone">
+<image src="{{ url_for( 'static' , filename='assets/headphones.png') }}" height="450px" width="auto" alt="Headphones"></image></div>
+<div id="left" class="left-audio">
+<image src="{{ url_for( 'static' , filename='assets/left-head.png') }}" height="450px" width="auto" alt="audio">
+</image></div>
+
+<div id="right" class="right-audio">
+<image src="{{ url_for( 'static' , filename='assets/right-head.png') }}" height="450px" width="auto" alt="audio">
+</image></div>
+
+<div id="both" class="both-audio">
+<image src="{{ url_for( 'static' , filename='assets/both-head.png') }}" height="450px" width="auto" alt="audio">
+</image></div>
+
+<button type="button" class="calibrate button-calibrate" id="calibrate" onclick="playCalibAudio()">PLAY AUDIO</button>
+<button type="button" class="start-test button-start-test" id="start-test" onclick="start_test()">START TEST</button>
+
+<button type="button" class="yes button" id="can-hear" onclick="canHear()">YES, I CAN HEAR</button>
+<button type="button" class="no button-cannot-hear" id="cannot-hear" onclick="cannotHear()">NO, I CANNOT HEAR</button>
+<button type="button" class="barely button-hear" id="hear" onclick="gotonextfreq()">I CAN BARELY HEAR</button>
+<div id="chartContainer" class="test-result-display" style=" margin-left:300px;height: 500px; width: 60%;"></div>
+<!-- Load the main script for the player -->
+<!-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+<script src="{{ url_for( 'static' , filename='player/script.js') }}"></script> 
+</body> 
+</html> 

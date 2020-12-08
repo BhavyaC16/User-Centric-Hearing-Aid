@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hearing Aid</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" type="image/x-icon" href="{{ url_for( 'static' , filename='assets/favicon.ico') }}">
+	</head>
+	<style>
+		html {
+		  height: 100%;
+		}
+		body {
+		  font-family: 'Roboto', sans-serif;
+		  margin: 0;
+		  background-color: #3385d7;
+		  height: 100%;
+		  overflow: hidden;
+		}
+		.menu {
+		  height: 60pt;
+		  width: 100%;
+		  padding-left: 12pt;
+		  background-color: #ffffff;
+		  
+		  position: fixed;
+		  display: flex;
+		  align-items: center;
+		  box-shadow: 0pt 0pt 30pt rgba(0,0,0,0.2);
+		}
+		.menu a {
+		  margin-right: 17pt;
+		  font-size: 13pt;
+		  text-decoration: none;
+		}
+		.menu a:link, .menu a:visited {
+		  color: #1c1c1c;
+		}
+		.about {
+		  /*background-color: #6233FF;*/
+		  background-color: #3385d7;
+		  color: #fff;
+		  height: calc(100% - 60pt);
+		  padding-top: 60pt;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		}
+		.inner-about {
+		  width: 100%;
+		  /*opacity: 0.5;*/
+		  background-image: url("/static/player/stone.jpg") 
+
+		  max-width: 600pt;
+		  padding: 10pt;
+		}
+		.inner-about h1 {
+		  margin: 0;
+		  font-size: 35pt;
+		  margin-bottom: -10pt;
+		}
+		.inner-about p {
+		  margin: 0;
+		  margin-bottom: 8pt;
+		  font-size: 15pt;
+		}
+		.social {
+		  margin-bottom: 0pt;
+		}
+		.social a {
+		  margin-right: 5pt;
+		}
+		.social a:link, .social a:visited {
+		  color: #fff;
+		  text-decoration: none;
+		}
+		.logo {
+			margin-right: -0.8em;
+
+		}
+	</style>
+
+	<body>
+
+		<div class="menu">
+			<a href="/"><img class="logo" src="/static/assets/logo.png" width="auto" height="60em"></a>
+      <h2><a href="/">Hearing Aid</a></h2>
+      
+      <!-- <a href="/login">Login</a> -->
+      <!-- <a href="/">Home</a> -->
+      <a href="/home">Home</a>
+      <!-- <a href="/bookmarks">Bookmarks</a> -->
+      <a href="/help">Help</a>
+      <!-- <a href="/terms">Terms</a> -->
+    </div>
+		<div class="about">
+		  <div class="inner-about">
+		    <h1>User Centric Hearing Aid</h1><br>
+		    <!-- <h2>Hear the difference</h2><br>
+		    <br> -->
+		    <p>Experience the difference with adjustable hearing aids!</p>
+		  </div>
+		</div>
+		
+	</body>
+</html>
+<script type="text/javascript">
+	
+</script>

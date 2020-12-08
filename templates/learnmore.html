@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Hearing Aid</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for( 'static' , filename='assets/style.css') }}"> 
+<link rel="shortcut icon" type="image/x-icon" href="{{ url_for( 'static' , filename='assets/favicon.ico') }}">
+
+</head>
+<body>
+  <div class="menu">
+    <a href="/"><img class="logo" src="/static/assets/logo.png" width="auto" height="60em"></a>
+      <b><a href="/">Hearing Aid</a></b>
+      
+      <!-- <a href="/login">Login</a> -->
+      <!-- <a href="/">Home</a> -->
+      <a href="/home">Home</a>
+      <!-- <a href="/bookmarks">Bookmarks</a> -->
+      <a href="/help">Help</a>
+      <!-- <a href="/terms">Terms</a> -->
+    </div>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+
+    <div class="col-md-9 mx-auto mb-5">
+      <div class="border-bottom">
+        <h1 class="text-dark" style="font-weight: 600;">Hearing Test Audiograms</h1>
+        <p class="text-secondary" style="line-height: 1.4; font-size: 1.4em; color:808080">An audiogram is a graph or chart that displays the results of your hearing test. Initially, it might look like a bunch of indecipherable lines and symbols. But once you learn how to read and interpret your audiogram, you will better understand your hearing loss.</p>
+        <img class="w-100 my-4" src="/static/learn/1.png" alt="">
+         <p class="text-secondary" style="line-height: 1.4; font-size: 1.4em; color:808080">
+        1. The horizontal axis (x-axis) represents frequency (pitch) from 250 Hz to 8000 Hz on a log scale. <br>
+        2. The vertical axis (y-axis) of the audiogram represents the intensity (loudness) of sound in decibels (dB), with the lowest levels at the top of the graph, starting from 0dB to 70dB. <br>
+        3. The responses from the left ear are represented in green, and those from the right ear are represented in red. If the two lines are essentially overlapping, your hearing loss is considered symmetrical, or the same in both ears.
+      </p>
+      <img class="w-100 my-4" src="/static/learn/2.png" alt="">
+      <p class="text-secondary" style="line-height: 1.4; font-size: 1.4em; color:808080">
+      Looking at the audiogram, normal hearing ability is represented in the green area above the 15-dB line that crosses the graph from left to right. If your threshold symbols fall in the green-shaded area, your hearing ability is considered within normal limits. Any symbols below that shaded area, however, indicate hearing loss at those frequencies.
+      <br>
+      <br>
+      The space between the normal hearing area and your threshold symbols represents all of the sounds you’re missing because of your hearing loss. The bigger the space, the more sounds you’re not hearing.
+    </p>
+      </div>
+      <br>
+      <br>
+      <br>
+            <div class="border-bottom">
+        <h1 class="text-dark" style="font-weight: 600;">Adjustable Hearing Aid</h1>
+        <p class="text-secondary" style="line-height: 1.4; font-size: 1.4em; color:808080">When you turn ON your Hearing Aid device, it automatically fetches your hearing report from the website. It then calibrates its filters to provide you the best hearing experience.</p>
+        <img class="w-100 my-4" src="/static/learn/3.png" alt="">
+         <p class="text-secondary" style="line-height: 1.4; font-size: 1.4em; color:808080">
+        We split your hearing range into different frequency bands, as shown in the image above. While taking your hearing test, your ears will be mapped based on their ability to hear these frequency ranges. We then use this to produce band-pass filters and amplify only the impaired ranges of frequencies. 
+      </p>
+      <img class="w-100 my-4" src="/static/learn/4.png" alt="">
+      <p class="text-secondary" style="line-height: 1.4; font-size: 1.4em; color:808080">
+      This block diagram shows how we capture input from your microphone, and process it using different band-pass filters. Then, with the help of a stop-pass filter and after companding the audio, we provide the re-adjusted sounds as output in your earphones.
+      <br>
+      <br>
+      This mechanism allows you to re-adjust your hearing aid by yourself by simply taking the hearing test and syncing your device to the latest results!
+    </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
