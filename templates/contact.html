@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Hearing Aid</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for( 'static' , filename='assets/style.css') }}"> 
+<link rel="shortcut icon" type="image/x-icon" href="{{ url_for( 'static' , filename='assets/favicon.ico') }}">
+<style>
+  div, iframe {
+    margin: 0 auto;
+}
+
+iframe {
+    display: block;
+    border-style:none;
+}
+</style>
+</head>
+<body>
+  <div class="menu">
+    <a href="/"><img class="logo" src="/static/assets/logo.png" width="auto" height="60em"></a>
+      <b><a href="/">Hearing Aid</a></b>
+      
+      <!-- <a href="/login">Login</a> -->
+      <!-- <a href="/">Home</a> -->
+      <a href="/home">Home</a>
+      <!-- <a href="/bookmarks">Bookmarks</a> -->
+      <a href="/help">Help</a>
+      <!-- <a href="/terms">Terms</a> -->
+    </div>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+
+    <div class="col-md-9 mx-auto mb-5">
+      <div class="border-bottom">
+        <h1 class="text-dark" style="font-weight: 600;">Contact Us</h1>
+        <!-- <img class="w-100 my-4" src="/static/assets/5.png" alt=""> -->
+        <br>
+<!--         <h5 style="color:#000000"> Mentor:</h5>
+        <p  style="line-height: 1.4; font-size:1.3em; color:#808080">
+          Dr Angshu Das
+        </p> -->
+<!--         <br> -->
+        <h5 style="color:#000000"> Developed by:</h5>
+        <p  style="line-height: 1.4; font-size:1.3em; color:#808080">
+          Akhil Jarodia, IIIT-D - akhil17130@iiitd.ac.in <br>
+          Ashutosh Bansal, IIIT-D - ashutosh17140@iiitd.ac.in <br>
+          Bhavya Chopra, IIIT-D - bhavya18333@iiitd.ac.in <br>
+          Shaurya Singh, IIIT-D - shaurya17313@iiitd.ac.in <br>
+          Snigdha Gupta, IIIT-D - snigdha18316@iiitd.ac.in <br>
+        </p>
+      </div>
+    </div>
+    <div  margin-left="100px" align="center" >
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGln3RpYzJzeINRxTRsZ5k9gms_CrSv8weoxX3FhvPkr9d5g/viewform?embedded=true" margin-left="500" width="640" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
